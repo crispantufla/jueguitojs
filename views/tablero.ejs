@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>HTML</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="enemy-life"><%= tablero.player2.life %></div>
+    <table class="enemy-results">
+        <tr>
+            <td style="color: red;">5</td>
+        </tr>
+    </table>
+    <table  class="tablero">
+        <tr>
+            <td><%= tablero.player2.cardPlayed %></td>
+
+        </tr>
+        <tr>
+            <td><%= tablero.simbolo %></td>
+        </tr>
+        <tr>
+            <td><%= tablero.player1.cardPlayed %></td>
+
+        </tr>
+    </table>
+    <table class="player-results">
+        <tr>
+            <td style="color: green;">u WIN</td>
+        </tr>
+    </table>
+    <div class="player-life"><%= tablero.player1.life %></div>
+    <table  class="player-cards">
+        <tr>
+            <td class="card" onclick="playCard(<%= tablero.player1.cards[0] %>)" ><%= tablero.player1.cards[0] %></td>
+            <td class="card" onclick="playCard(<%= tablero.player1.cards[1] %>)" ><%= tablero.player1.cards[1] %></td>
+            <td class="card" onclick="playCard(<%= tablero.player1.cards[2] %>)" ><%= tablero.player1.cards[2] %></td>
+        </tr>
+    </table>
+</body>
+</html>
+<script src="/js/playCard.js"></script>

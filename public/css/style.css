@@ -1,0 +1,35 @@
+* {
+    text-align: -webkit-center;
+    font-family: sans-serif;
+}
+
+.tablero {
+    width: 500px;
+    height: 500px;
+}
+
+.tablero tr {
+    text-align: center;
+}
+
+.tablero td {
+    border: 1px solid black;
+    font-size: 70px;
+}
+
+.enemy-life {
+    font-size: 70px;
+    color: red;
+}
+
+.player-life {
+    font-size: 70px;
+    color: green;
+}
+
+.card {
+    height: 100px;
+    width: 70px;
+    border: 1px solid black;
+    font-size: 40px;
+}
